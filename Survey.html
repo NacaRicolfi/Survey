@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Form for Final Work</h1>
+        <p id="description" class="description text-center">
+          Small sample survey created for testing.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label> <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number" >Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+        </div>
+        <div class="form-group">
+          <p>What is your motivation for taking a course at FreeCodeCamp?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="learning">Learning new concepts</option>
+            <option value="job">Job opportunities</option>
+            <option value="expand">Expand knowledge</option>
+            <option value="curiosity">Curiosity</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Who recommended you to perform it in freeCodeCamp?</p>
+          <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Friend</label>
+          <label><input name="user-recommend" value="maybe" type="radio" class="input-radio" />Social Network</label>
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Advertising</label>
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What is your area of study or where do you want to improve your skills?
+            <span class="clue">(Select all the options that apply to your profile.)</span>
+          </p>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Front-end Developer</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Back-end Developer</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Tester QA/QC</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Automatization Tester</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Manual Tester</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Git/GitHub</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />AI</label>
+          <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Data Bases</label>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or recommendation?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
